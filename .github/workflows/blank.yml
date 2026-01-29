@@ -36,5 +36,4 @@ jobs:
       # Print the PASSWORD secret (org secret must be granted to this repo)
       - name: Print PASSWORD secret (masked by GitHub)
         run: |
-          echo "PASSWORD=${{ secrets.PASSWORD }}"
-          echo "PASSWORD=${{ vars.NAME }}"
+          echo "Var=${{ vars.NAME }}"
